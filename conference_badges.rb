@@ -15,11 +15,10 @@ def assign_rooms(namesArray)
   roomsArray
 end
 
-def printer(name, namesArray)
-  print badge_maker
-  assign_rooms[namesArray]
-  print assign_rooms['name']
-end
 
-def conference_badges
+def printer(name, namesArray)
+  puts badge_maker(name)
+  hash = assign_rooms(namesArray)
+  print "Hello, #{name}! You'll be assigned to room #{hash[name]}!"
+
 end
